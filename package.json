@@ -1,7 +1,7 @@
 {
-  "name": "pongderdome",
+  "name": "pixijs-starter-project",
   "version": "1.0.0",
-  "description": "A battle",
+  "description": "Starter project for PixiJS games",
   "main": "index.js",
   "scripts": {
     "test": "jest",
