@@ -1,0 +1,36 @@
+{
+  "name": "pongderdome",
+  "version": "1.0.0",
+  "description": "A battle",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npm run clean && parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html --public-url ./",
+    "build_serve": "npm run build && http-server ./dist",
+    "clean": "rimraf ./dist ./.cache"
+  },
+  "keywords": [
+    "games",
+    "pixijs",
+    "pong",
+    "multiplayer",
+    "webgl"
+  ],
+  "author": "Alex Sheehan",
+  "license": "ISC",
+  "dependencies": {
+    "pixi.js": "^6.0.4",
+    "rxjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.12.3",
+    "jest": "^27.0.6",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  }
+}
